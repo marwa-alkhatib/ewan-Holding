@@ -56,3 +56,11 @@ window.addEventListener("scroll", function () {
     );
 
 });
+
+
+const menu = document.querySelector(".menu");
+const navLinks = document.querySelector(".hero-nav nav");
+
+menu.addEventListener("click", function () {
+  navLinks.classList.toggle("menu-open");
+});
