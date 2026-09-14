@@ -59,7 +59,8 @@ window.addEventListener("scroll", function () {
 
 
 const menu = document.querySelector(".menu");
-const navLinks = document.querySelector(".hero-nav nav");
+
+const navLinks = document.querySelector(".hero-nav nav, .about-navbar nav");
 
 menu.addEventListener("click", function () {
   navLinks.classList.toggle("menu-open");
