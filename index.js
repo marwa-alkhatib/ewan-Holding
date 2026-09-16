@@ -58,10 +58,33 @@ window.addEventListener("scroll", function () {
 });
 
 
-const menu = document.querySelector(".menu");
+// ==========================================
+// PAGES MOBILE MENU
+// ==========================================
 
-const navLinks = document.querySelector(".hero-nav nav, .about-navbar nav");
+const pagesMenu = document.querySelector(".pages-navbar-menu");
+const pagesLinks = document.querySelector(".pages-navbar-links");
 
-menu.addEventListener("click", function () {
-  navLinks.classList.toggle("menu-open");
-});
+if (pagesMenu && pagesLinks) {
+
+    pagesMenu.addEventListener("click", function () {
+        pagesLinks.classList.toggle("menu-open");
+    });
+
+}
+
+
+// ==========================================
+// HOME MOBILE MENU
+// ==========================================
+
+const homeMenu = document.querySelector(".hero-nav .menu");
+const homeLinks = document.querySelector(".hero-nav nav");
+
+if (homeMenu && homeLinks) {
+
+    homeMenu.addEventListener("click", function () {
+        homeLinks.classList.toggle("menu-open");
+    });
+
+}
